@@ -1,5 +1,5 @@
 > # Web Api .Net Core 2.2 e MongoDB 🔗
-![](https://github.com/DevCarlosLima/Safira/blob/master/Docs/Images/Badges/release.svg)
+![](https://github.com/DevCarlosLima/DotNetCore2.2_MongoDB/blob/master/Books/Images/release.svg)
 ```
 Exemplo de implementação do MongoDb em Web Api .Net Core 2.2 ...
 ```
