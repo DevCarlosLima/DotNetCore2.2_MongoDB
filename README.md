@@ -4,4 +4,6 @@
 Exemplo de implementação do MongoDb em Web Api .Net Core 2.2 ...
 ```
 ---
-<img src="https://github.com/DevCarlosLima/DotNetCore2.2_MongoDB/blob/master/Books/Images/image.PNG" width="80" heigth="80" />
+<p align="center">
+<img src="https://github.com/DevCarlosLima/DotNetCore2.2_MongoDB/blob/master/Books/Images/image.PNG" width="200" heigth="200" />
+</p>
