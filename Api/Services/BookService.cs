@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using Books.Models;
+using Api.Models;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 
-namespace Books.Services {
+namespace Api.Services {
     public class BookService {
         private readonly IMongoCollection<BookModel> _books;
 
