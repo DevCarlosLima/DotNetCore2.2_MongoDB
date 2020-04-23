@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Books.Models;
 using Books.Services;
 using Microsoft.AspNetCore.Mvc;
-using MongoDB.Driver;
 
 namespace Books.Controllers {
     [Route ("api/[controller]")]
@@ -17,27 +12,23 @@ namespace Books.Controllers {
             _service = service;
         }
 
-        // GET api/values
         [HttpGet]
         public IActionResult Get () {
             return Ok (_service.Get ());
         }
 
-        // GET api/values/5
         [HttpGet ("{id}")]
         public IActionResult Get (int id) {
             return Ok (_service.Get (id));
         }
 
-        // POST api/values
         [HttpPost]
         public IActionResult Post (BookModel book) {
             _service.Add (book);
 
-            return Ok();
+            return Ok ();
         }
 
-        // PUT api/values/5
         [HttpPut]
         public IActionResult Put (BookModel book) {
             var exist = _service.Get (book.Id);
@@ -50,9 +41,8 @@ namespace Books.Controllers {
             return NoContent ();
         }
 
-        // DELETE api/values/5
         [HttpDelete ("{id}")]
-        public IActionResult Delete (int id) { 
+        public IActionResult Delete (int id) {
             var exist = _service.Get (id);
 
             if (exist == null)
